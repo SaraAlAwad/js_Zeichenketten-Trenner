@@ -8,11 +8,11 @@ function trennen() {
     console.log(inputString.value)
     let str = inputString.value
     console.log(subString.value)
-    let position = subString.value;
-    console.log(inputString.value.search(position))
-    let userInputP = inputString.value.search(position);
+    let substr = subString.value;
+    console.log(inputString.value.search(substr))
+    let userInputP = inputString.value.search(substr);
 
-    if (document.getElementById("before").checked === true) {
+    if (document.getElementById("before").checked === true && userInputP != -1) {
         console.log("if test1");
         output.innerHTML = str.slice(0, userInputP);
         output2.innerHTML = str.slice(userInputP);
@@ -24,8 +24,8 @@ function trennen() {
     }
     else {
         console.log("if test2")
-        output.innerHTML = str.slice(0, userInputP + position.length);
-        output2.innerHTML = str.slice(userInputP + position.length);
+        output.innerHTML = str.slice(0, userInputP + substr.length);
+        output2.innerHTML = str.slice(userInputP + substr.length);
     }
     // else if (document.getElementById("after").checked === true) {
     //     console.log("if test2")
