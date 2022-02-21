@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1{font-size: 1.5rem; text-align: center;}
+h2{font-size: 1.3rem;}
+h3{
+    margin-bottom: 5%;
+}
+form{
+border: 1px solid;
+width: 50%;
+margin: 5% auto;
+padding: 2%;
+}
+input[type="text"] {
+    width: 60%;
+    margin: 2% 0;
+    }
+    input[type="submit"] {
+   margin: 2% 0;
+font-size: 1rem;
+    padding: .5rem;
+    }
+
+form div{
+margin: 1%;
+}
+.answer{
+display: flex;
+justify-content: space-between;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 3%;
+}

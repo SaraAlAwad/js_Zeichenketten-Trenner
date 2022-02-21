@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <h1>Zeichenkettentrennungmaschine</h1>
+
     <form action="" onsubmit="return false">
+        <h1>Zeichenkettentrennungmaschine</h1>
         <label for="string">
             <h2> Zu trennede Zeichenkette</h2>
         </label>
@@ -21,27 +22,29 @@
             <h2>Zeichenkette für die Trennungsposition:</h2>
         </label>
         <input type="text" name="subString" id="subString">
-        <label for="subString">
-            <h2>Zeichenkette für die Trennungsposition:</h2>
-        </label>
-        <input type="radio" name="choose" id="before" value="">
-        <label for="before">davor trennen</label>
-        <input type="radio" name="choose" id="after" value="">
-        <label for="before">danach trennen</label>
+        <div>
+            <input type="radio" name="choose" id="before" value="">
+            <label for="before">davor trennen</label>
+        </div>
+        <div>
+            <input type="radio" name="choose" id="after" value="">
+            <label for="before">danach trennen</label>
+        </div>
         <input type="submit" value="Trennen" onclick="trennen()">
+        <section class="answer">
+            <div>
+                <h3>Ausgabe</h3>
+                <p class="title">Vorderer Teil</p>
+                <p id="output"></p>
+            </div>
+            <div>
+                <h3>Ausgabe</h3>
+                <p class="title">Hinterer Teil</p>
+                <p id="output2"></p>
+            </div>
+        </section>
     </form>
-    <section class="answer">
-        <div>
-            <h3>Ausgabe</h3>
-            <p class="title">Vorderer Teil</p>
-            <p id="output"></p>
-        </div>
-        <div>
-            <h3>Ausgabe</h3>
-            <p class="title">Hinterer Teil</p>
-            <p id="output2"></p>
-        </div>
-    </section>
+
     <script src="assets/js/main.js"></script>
 </body>
 
